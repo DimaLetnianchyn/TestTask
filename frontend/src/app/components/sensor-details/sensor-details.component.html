@@ -1,0 +1,9 @@
+<h2>Датчики для станции {{ stationId }}</h2>
+<ul *ngIf="sensors">
+  <li *ngFor="let sensor of sensors">
+    <strong>{{ sensor.name }}</strong><br>
+    Влажность: {{ sensor.humidity }}%<br>
+    Температура: {{ sensor.temperature }}°C<br>
+    Уровень радиации: {{ sensor.radiation }} мкЗв/ч
+  </li>
+</ul>

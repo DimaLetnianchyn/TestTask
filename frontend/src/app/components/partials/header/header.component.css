@@ -16,3 +16,21 @@ background: rgb(121, 228, 130);
 color: white;
 cursor: pointer;
 }
+
+b{
+
+    color: rgb(74, 95, 42);
+    }
+    
+ 
+.container{
+margin: 0 auto;
+display: flex;
+
+}
+
+a.logo{
+    font-weight: bold;
+    padding: 1rem;
+
+}
