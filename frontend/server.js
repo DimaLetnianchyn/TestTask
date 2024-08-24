@@ -19,6 +19,16 @@ db.connect(err => {
   console.log('MySQL Connected...');
 });
 
+
+// Маршрут для получения списка станций
+app.get('/api/stations', (req, res) => {
+  const query = 'SELECT * FROM stations';
+  db.query(query, (err, results) => {
+    if (err) throw err;
+    res.json(results);
+  });
+});
+
 // Маршрут для получения данных датчиков по id станции
 app.get('/api/sensors/:stationId', (req, res) => {
   const stationId = req.params.stationId;
