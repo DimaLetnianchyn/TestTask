@@ -36,10 +36,3 @@ app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
 
-db.connect((err) => {
-    if (err) {
-      console.error('Ошибка подключения к базе данных:', err.stack);
-      return;
-    }
-    console.log('Подключено к базе данных как id ' + db.threadId);
-  });

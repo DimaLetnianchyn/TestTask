@@ -1,0 +1,41 @@
+.station-list-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .station-list-title {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .station-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .station-list-item {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #4CAF50; /* Зеленый цвет для активного элемента */
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .station-list-item:hover {
+    background-color: #45a049; /* Более темный зеленый при наведении */
+  }
+  
+  .station-list-item:active {
+    background-color: #388E3C; /* Еще темнее при клике */
+  }
+  

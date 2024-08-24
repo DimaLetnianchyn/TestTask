@@ -1,6 +1,11 @@
-<h2>Список атомных электростанций</h2>
-<ul>
-  <li *ngFor="let station of stations" (click)="onStationSelect(station.id)">
-    {{ station.name }}
-  </li>
-</ul>
+<div class="station-list-container">
+  <h2 class="station-list-title">Список атомных электростанций</h2>
+  <ul class="station-list">
+    <li 
+      class="station-list-item" 
+      *ngFor="let station of stations" 
+      (click)="onStationSelect(station.id)">
+      {{ station.name }}
+    </li>
+  </ul>
+</div>
